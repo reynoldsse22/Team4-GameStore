@@ -1,0 +1,52 @@
+﻿@page "/games"
+
+<h3>Games</h3>
+
+<u1>
+    @foreach(var game in gaming)
+    {
+        <li>
+            <input type="checkbox" @bind="game.gameIsDone"/>
+            @game.gameName
+        </li>
+        <img src=@game.gameLink asp-append-version="true" width="300px" />
+    }
+    <br> 
+    <p>
+        <label>Currently In Cart</label>
+    </p>
+    
+    @foreach (var c in cart)
+    {
+        <li>@c.gameName</li> 
+    }
+    <p>
+        <button @onclick="AddCart">Add To Cart</button>
+    </p>
+    <Cart gameCart ="cart"/>
+
+</u1>
+
+@code {
+    private string deez;
+    private List<GameList> cart = new();
+    private List<GameList> gaming = new() { new GameList{ gameName = "Rockman", gameLink = "Images/deeznutssss.webp"},
+                                            new GameList{gameName = "Mario Pratt", gameLink = "Images/Mario.jpg"},
+                                            new GameList{gameName = "Skyrim 90th edition", gameLink = "Images/skyrim.png"} };
+
+    private void AddCart()
+    {
+        foreach(var g in gaming)
+        {
+            if(g.gameIsDone && !cart.Contains(g))
+            {
+                cart.Add(g);
+            }
+            else if(!g.gameIsDone && cart.Contains(g))
+            {
+                cart.Remove(g);
+            }
+        }
+    }
+
+}

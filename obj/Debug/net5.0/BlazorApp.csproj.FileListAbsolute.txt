@@ -1,0 +1,310 @@
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\appsettings.Development.json
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\appsettings.json
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.exe
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.deps.json
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.runtimeconfig.dev.json
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\ref\BlazorApp.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.pdb
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.pdb
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.csprojAssemblyReference.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CoreCompileInputs.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorComponent.input.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorComponent.output.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\BlazorApp.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.TagHelpers.input.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.TagHelpers.output.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorCoreGenerate.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\App.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.xml
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\scopedcss\bundle\BlazorApp.styles.css
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.Views.pdb
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\ref\BlazorApp.dll
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.pdb
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+E:\ETSU\Fall 2021\csci3610\Labs\BlazorApp\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\appsettings.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.exe
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.deps.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.runtimeconfig.dev.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.AssemblyReference.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CoreCompileInputs.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorComponent.input.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorComponent.output.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.TagHelpers.input.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.TagHelpers.output.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorCoreGenerate.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.xml
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\scopedcss\bundle\BlazorApp.styles.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Cart.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\obj\Debug\net5.0\Razor\Pages\Cart.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\appsettings.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.exe
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.deps.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.runtimeconfig.dev.json
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.Views.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\bin\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.csproj.AssemblyReference.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.csproj.CoreCompileInputs.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorComponent.input.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Pages\Cart.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorComponent.output.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\RazorDeclaration\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.TagHelpers.input.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.TagHelpers.output.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorCoreGenerate.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\Cart.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.xml
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\scopedcss\bundle\BlazorApp.styles.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.pdb
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
+C:\Users\samre\OneDrive\Desktop\BlazorApp\Team4-Project2\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\appsettings.json
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.exe
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.deps.json
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.runtimeconfig.dev.json
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.Views.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\bin\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.csproj.AssemblyReference.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.csproj.CoreCompileInputs.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorComponent.input.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Pages\Cart.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorComponent.output.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\RazorDeclaration\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.TagHelpers.input.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.TagHelpers.output.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorCoreGenerate.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\Cart.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\scopedcss\bundle\BlazorApp.styles.css
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.xml
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\Team4-Project2-Main\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\appsettings.json
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.exe
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.deps.json
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.runtimeconfig.dev.json
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.Views.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\bin\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.csproj.AssemblyReference.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.csproj.CoreCompileInputs.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorComponent.input.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\Cart.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorComponent.output.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.TagHelpers.input.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.TagHelpers.output.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorCoreGenerate.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Cart.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorAssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\scopedcss\bundle\BlazorApp.styles.css
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\staticwebassets\BlazorApp.StaticWebAssets.xml
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.Views.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\ref\BlazorApp.dll
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.pdb
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\RazorDeclaration\Pages\Games.razor.g.cs
+C:\Users\cocar\Downloads\Team4-Project2-main\obj\Debug\net5.0\Razor\Pages\Games.razor.g.cs

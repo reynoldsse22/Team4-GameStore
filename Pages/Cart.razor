@@ -1,0 +1,40 @@
+@page "/cart"
+
+<h3>Check out</h3>
+
+<br />
+    @foreach(var c in gameCart)
+    {
+        <li>@c.gameName</li>
+    }
+<br />
+<button @onclick="HandleBlazorServerClick">Blazor Server</button>
+<button @onclick="HandleBlazorWebAssemblyClick">Blazor WebAssembly</button>
+
+<br />
+<br />
+<h3>@title</h3>
+<br />
+<div>
+    @content
+</div>
+
+@code {
+    private string title;
+    private string content;
+
+    [Parameter]
+    public List<GameList> gameCart {get; set;}
+    
+    private void HandleBlazorServerClick()
+    {
+        title = "Temp Title";
+        content = "Some filler content that doesn't matter";
+    }
+
+    private void HandleBlazorWebAssemblyClick()
+    {
+        title = "Temp Title";
+        content = "Some filler content will not matter";
+    }
+}
