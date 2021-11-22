@@ -97,7 +97,7 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 10 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
+#line 11 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
        
     [Parameter]
     public Game Game { get; set; }

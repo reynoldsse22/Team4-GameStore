@@ -131,39 +131,6 @@
         }
       },
       {
-        "HashCode": -1819931070,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList"
-        }
-      },
-      {
-        "HashCode": -1542993760,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.GameList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1111749388,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Cart",
@@ -193,6 +160,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Pages.Cart",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1819931070,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList"
+        }
+      },
+      {
+        "HashCode": -1542993760,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
