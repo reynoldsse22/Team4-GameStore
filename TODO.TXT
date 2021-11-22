@@ -1,4 +1,4 @@
-1. Create Checkout
+1. Create Checkout with quantity functionality
 2. Create single product page - with reviews
 3. Create Log in?
 4. Connect to back end SQL Lite database for data permanence

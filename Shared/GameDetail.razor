@@ -1,13 +1,6 @@
 @using Data
 @inject CartService CartService
 
-<div class="gameCard">
-    <div class="card-title"></div>
-    <div class="card-image"></div>
-    <div class="card-price"></div>
-    <div class="card-footer"></div>
-</div>
-
 @code {
     [Parameter]
     public Game Game { get; set; }
@@ -21,26 +14,32 @@
 
 }
 
-<div class="gameCard">
-  <div class="card-image">
-      <img class="image-cover" src= "@Game.ImageLink"/>
-  </div>
-  <div class="card-title">
-      @Game.Name
-  </div>
-  <div class="card-price">
-      @Game.Price
-  </div>
-  
-  <div class="card-body">
-      @Game.Description
-  </div>
-
-  @if (ShowBuyButton)
-  {
-      <div class="card-footer">
-          <button @onclick="AddToCart">Add To Cart</button>
-      </div>
-  }
-</div>
+<li class="game-container">
+    <div class="game-card">
+        <a href="/game/@Game.ID">
+            <img class="card-image" src="@Game.ImageLink" alt="@Game.Name" />
+        </a>
+    </div>
+    <div class="card-body">
+        <a href="/game/@Game.ID">
+            <h4 class="card-title">@Game.Name</h4>
+        </a>
+        <p>@Game.Description</p>
+        @if(Game.OriginalPrice > @Game.Price)
+        {
+            <h6 class="original-price">@Game.OriginalPrice</h6>
+        }
+        <h5 class="price">
+            $@Game.Price
+        </h5>
+         @if (ShowBuyButton)
+         {
+            <div class="card-footer">
+                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+                <button @onclick="AddToCart">Add To Cart</button>
+                
+             </div>
+         }
+    </div>
+</li>
 

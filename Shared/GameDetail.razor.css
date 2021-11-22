@@ -1,54 +1,82 @@
+
 .page {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.gameCard {
+.game-container {
+  width: 100%;
+  list-style: none;
+}
+
+.game-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 25%;
-    margin: auto;
-    text-align: center;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 6px;
+    margin-bottom: 10px;
     font-family: arial;
+  }
+
+  .price {
+    color: green;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: red;
   }
 
   .card-image {
     width: 100%;
     object-position: center;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    transition: transform .2s;
+    object-fit:fill;
+    float: left;
   }
-  .image-cover {
-      width: 300px;
-      object-fit: cover;
-      object-position: center;
+
+  .card-image:hover {
+    transform: scale(1.1);
   }
 
   .card-title {
     font-size: 30px;
-    text-align: center; 
   }
   
   .card-price {
     color: grey;
     font-size: 22px;
-    text-align: center;
   }
 
-  .card-body {
-    text-align: center;
-  }
   
-  .card button {
+  .card-footer {
     border: none;
     outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
+    padding: 6px;
+    color: rgb(73, 70, 70);
+    background-color: inherit;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
   }
   
-  .card button:hover {
+  .card-footer:hover {
     opacity: 0.7;
+  }
+
+  input {
+    width: 45px;
+  }
+
+  input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+  }
+  
+  input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
   }
