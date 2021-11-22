@@ -1,0 +1,41 @@
+@using Data
+@inject CartService CartService
+
+<div class="gameCard">
+    <div class="card-title"></div>
+    <div class="card-image"></div>
+    <div class="card-footer"></div>
+</div>
+
+@code {
+    [Parameter]
+    public Game Game { get; set; }
+    [Parameter]
+    public bool ShowBuyButton { get; set; }
+
+    private void AddToCart()
+    {
+        CartService.AddToCart(Game);
+    }
+
+}
+
+<div class="card">
+  <div class="card-title">
+      @Game.Name
+  </div>
+  <div class="card-image">
+      <img src= "@Game.ImageLink" asp-append-version="true" width="300px" />
+  </div>
+  <div class="card-body">
+      @Game.Description
+  </div>
+
+  @if (ShowBuyButton)
+  {
+      <div class="card-footer">
+          <button @onclick="AddToCart">Add To Cart</button>
+      </div>
+  }
+</div>
+

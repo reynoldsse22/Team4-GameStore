@@ -1,5 +1,5 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">BlazorApp</a>
+    <a class="navbar-brand" href="">BlockBuster</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,34 +8,28 @@
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+            <NavLink class="nav-link" href=""
+                Match="NavLinkMatch.All">
+                <span class="material-icons">home</span>Home
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="games"
+                Match="NavLinkMatch.All">
+            <span class="material-icons">games</span>Games
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="wishlist"
+                Match="NavLinkMatch.All">
+                <span class="material-icons">receipt_long</span>Wishlist
             </NavLink>
         </li>
         <li class="nav-item px-3">
-        <NavLink class="nav-link" href="todo">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
-        </NavLink>
-        </li>
-        <li class="nav-item px-3">
-        <NavLink class="nav-link" href="games">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Games
-        </NavLink>
-        </li>
-        <li class="nav-item px-3">
-        <NavLink class="nav-link" href="cart">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Cart
-        </NavLink>
+            <NavLink class="nav-link" href="cart"
+                Match="NavLinkMatch.All">
+                <span class="material-icons">shopping_cart</span>Cart
+            </NavLink>
         </li>
     </ul>
 </div>

@@ -1,40 +1,23 @@
 @page "/cart"
+@using Data
+@inject CartService CartService
 
-<h3>Check out</h3>
+<h1>Shopping Cart</h1>
 
-<br />
-    @foreach(var c in gameCart)
+@code
+{
+    private List<Game> GamesInCart = new();
+    protected override void OnInitialized()
     {
-        <li>@c.gameName</li>
-    }
-<br />
-<button @onclick="HandleBlazorServerClick">Blazor Server</button>
-<button @onclick="HandleBlazorWebAssemblyClick">Blazor WebAssembly</button>
-
-<br />
-<br />
-<h3>@title</h3>
-<br />
-<div>
-    @content
-</div>
-
-@code {
-    private string title;
-    private string content;
-
-    [Parameter]
-    public List<GameList> gameCart {get; set;}
-    
-    private void HandleBlazorServerClick()
-    {
-        title = "Temp Title";
-        content = "Some filler content that doesn't matter";
-    }
-
-    private void HandleBlazorWebAssemblyClick()
-    {
-        title = "Temp Title";
-        content = "Some filler content will not matter";
+        GamesInCart = CartService.GetProductsInCart();
     }
 }
+
+<div>Games in cart:</div>
+<div class="d-flex flex-column">
+    @foreach (var game in GamesInCart)
+    {
+        <GameDetail Game="game" ShowBuyButton="false"></GameDetail>
+    }
+</div>
+

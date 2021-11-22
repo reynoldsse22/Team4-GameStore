@@ -13,77 +13,84 @@ namespace BlazorApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 1 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 3 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 4 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 5 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 6 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 7 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 9 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using BlazorApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 10 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using BlazorApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/todo")]
-    public partial class Todo : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\GameList.razor"
+using Data;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/games")]
+    public partial class GameList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,23 +98,19 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\Pages\Todo.razor"
-       
-    private List<TodoItem> todos = new();
-    private string newTodo;
+#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\GameList.razor"
+ 
+    private List<Game> Games;
 
-    private void AddTodo()
+    protected override void OnInitialized()
     {
-        if (!string.IsNullOrWhiteSpace(newTodo))
-        {
-            todos.Add(new TodoItem { Title = newTodo });
-            newTodo = string.Empty;
-        }
+        Games = GameService.GetAllGames();      
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GameService GameService { get; set; }
     }
 }
 #pragma warning restore 1591

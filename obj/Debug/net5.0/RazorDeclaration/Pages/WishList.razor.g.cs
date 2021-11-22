@@ -13,77 +13,77 @@ namespace BlazorApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 1 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 3 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 4 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 5 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 6 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 7 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 9 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using BlazorApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\_Imports.razor"
+#line 10 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
 using BlazorApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/games")]
-    public partial class Games : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/wishlist")]
+    public partial class WishList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,29 +91,19 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "c:\Users\samre\OneDrive\Desktop\Team4-GameStore\Pages\Games.razor"
+#line 18 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\WishList.razor"
        
-    private string deez;
-    private List<GameList> cart = new();
-    private List<GameList> gaming = new() { new GameList{ gameName = "Rockman", gameLink = "Images/deeznutssss.webp"},
-                                            new GameList{gameName = "Mario Pratt", gameLink = "Images/Mario.jpg"},
-                                            new GameList{gameName = "Skyrim 90th edition", gameLink = "Images/skyrim.png"} };
+    private List<WishListItem> wishlist = new();
+    private string game;
 
-    private void AddCart()
+    private void AddWishItem()
     {
-        foreach(var g in gaming)
+        if (!string.IsNullOrWhiteSpace(game))
         {
-            if(g.gameIsDone && !cart.Contains(g))
-            {
-                cart.Add(g);
-            }
-            else if(!g.gameIsDone && cart.Contains(g))
-            {
-                cart.Remove(g);
-            }
+            wishlist.Add(new WishListItem { Title = game });
+            game = string.Empty;
         }
     }
-
 
 #line default
 #line hidden

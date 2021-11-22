@@ -1,0 +1,22 @@
+@page "/games"
+@using Data
+@inject GameService GameService
+
+<h2>Used Games</h2>
+
+@code 
+{
+    private List<Game> Games;
+
+    protected override void OnInitialized()
+    {
+        Games = GameService.GetAllGames();      
+    }
+}
+
+@foreach (var game in Games)
+{
+    <GameDetail Game="game" ShowBuyButton="true"></GameDetail>
+}
+
+<NavLink href="/cart">Check-out</NavLink>

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\BlazorApp.csproj",
+  "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\BlazorApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -12,55 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1002777512,
+        "HashCode": 1747013910,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Cart",
+        "Name": "BlazorApp.Pages.WishList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Cart"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "gameCart",
-            "TypeName": "System.Collections.Generic.List<GameList>",
-            "Metadata": {
-              "Common.PropertyName": "gameCart"
-            }
+            "TagName": "WishList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Cart"
+          "Common.TypeName": "BlazorApp.Pages.WishList"
         }
       },
       {
-        "HashCode": -591371918,
+        "HashCode": 1712237801,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Cart",
+        "Name": "BlazorApp.Pages.WishList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Cart"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "gameCart",
-            "TypeName": "System.Collections.Generic.List<GameList>",
-            "Metadata": {
-              "Common.PropertyName": "gameCart"
-            }
+            "TagName": "BlazorApp.Pages.WishList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Cart",
+          "Common.TypeName": "BlazorApp.Pages.WishList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -118,72 +98,6 @@
         }
       },
       {
-        "HashCode": -891376953,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.FetchData",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 77442737,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.FetchData",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 985140364,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Games",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Games"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Games"
-        }
-      },
-      {
-        "HashCode": 2086371987,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Games",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Games"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Games",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1959485522,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Index",
@@ -217,35 +131,68 @@
         }
       },
       {
-        "HashCode": -807309595,
+        "HashCode": -1819931070,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Todo",
+        "Name": "BlazorApp.Pages.GameList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Todo"
+            "TagName": "GameList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Todo"
+          "Common.TypeName": "BlazorApp.Pages.GameList"
         }
       },
       {
-        "HashCode": 2134079007,
+        "HashCode": -1542993760,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Todo",
+        "Name": "BlazorApp.Pages.GameList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Todo"
+            "TagName": "BlazorApp.Pages.GameList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Todo",
+          "Common.TypeName": "BlazorApp.Pages.GameList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1111749388,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Cart",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cart"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Cart"
+        }
+      },
+      {
+        "HashCode": 1100543141,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Cart",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Cart"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Cart",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -461,6 +408,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1535840013,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.GameDetail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameDetail"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.GameDetail"
+        }
+      },
+      {
+        "HashCode": -1417767872,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.GameDetail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Shared.GameDetail"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.GameDetail",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16072,69 +16052,69 @@
   "RootNamespace": "BlazorApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Cart.razor",
-      "TargetPath": "Pages\\Cart.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Games.razor",
-      "TargetPath": "Pages\\Games.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Todo.razor",
-      "TargetPath": "Pages\\Todo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\WishList.razor",
+      "TargetPath": "Pages\\WishList.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Shared\\GameDetail.razor",
+      "TargetPath": "Shared\\GameDetail.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\GameList.razor",
+      "TargetPath": "Pages\\GameList.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\Cart.razor",
+      "TargetPath": "Pages\\Cart.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

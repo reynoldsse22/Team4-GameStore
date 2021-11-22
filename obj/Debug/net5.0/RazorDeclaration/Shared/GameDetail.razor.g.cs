@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp
+namespace BlazorApp.Shared
 {
     #line hidden
     using System;
@@ -82,13 +82,38 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class App : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 1 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
+using Data;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class GameDetail : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 10 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
+       
+    [Parameter]
+    public Game Game { get; set; }
+    [Parameter]
+    public bool ShowBuyButton { get; set; }
+
+    private void AddToCart()
+    {
+        CartService.AddToCart(Game);
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }
 #pragma warning restore 1591

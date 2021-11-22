@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TpI9cK4Ykd5shIThxhJK3YrAlZMkklBoXp+pj6AiW4/3FQAKg7g8jjnIflMzqDNjdzqQr31thUkTnayMxdgB3g==",
+  "dgSpecHash": "oNn7ql6Y63GrqHBWrgdcfbILQGkt689tWxfXzurYvvfsS/vvPmwe5ue/Sio3daH/tuuJe+cYAdBrNbBdLPlaAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cocar\\Downloads\\Team4-Project2-main\\BlazorApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\cocar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\BlazorApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
