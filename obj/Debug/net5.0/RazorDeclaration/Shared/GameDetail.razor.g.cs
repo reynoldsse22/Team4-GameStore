@@ -97,22 +97,43 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 4 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
+#line 6 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
        
     [Parameter]
     public Game Game { get; set; }
     [Parameter]
-    public bool ShowBuyButton { get; set; }
+    public bool InCart { get; set; }
+    [Parameter]
+    public bool InWishList { get; set; }
+    [Parameter]
+    public int Quantity {get;set;}
 
     private void AddToCart()
     {
-        CartService.AddToCart(Game);
+        CartService.AddToCart(Game, Quantity);
+    }
+    private void RemoveFromCart()
+    {
+        CartService.RemoveFromCart(Game, Quantity);
+       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+    private void AddToWishList()
+    {
+        WishListService.AddToWishList(Game);
+    }
+
+    private void RemoveFromWishList()
+    {
+        WishListService.RemoveFromWishList(Game);
+       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishListService WishListService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }

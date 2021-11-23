@@ -1,30 +1,22 @@
 ﻿@page "/wishlist"
+@using Data
+@inject WishListService WishListService
 
-<h3>Wishlist (@wishlist.Count(WishListItem => !WishListItem.IsDone))</h3>
+<h1>WishList</h1>
 
-<ul>
-    @foreach (var item in wishlist)
+@code
+{
+    private List<Game> GamesInWishList = new();
+    protected override void OnInitialized()
     {
-        <li>
-            <input type="checkbox" @bind="item.IsDone" />
-            <input @bind="item.Title" />
-        </li>
-    }
-</ul>
-
-<input placeholder="Enter Item to Add" @bind="game" />
-<button @onclick="AddWishItem">Add Item</button>
-
-@code {
-    private List<WishListItem> wishlist = new();
-    private string game;
-
-    private void AddWishItem()
-    {
-        if (!string.IsNullOrWhiteSpace(game))
-        {
-            wishlist.Add(new WishListItem { Title = game });
-            game = string.Empty;
-        }
+        GamesInWishList = WishListService.GetProductsInWishList();
     }
 }
+
+<div class="d-flex flex-column">
+    @foreach (var game in GamesInWishList)
+    {
+        <GameDetail Game="game" InWishList="true"></GameDetail>
+    }
+</div>
+

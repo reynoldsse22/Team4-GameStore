@@ -1,23 +1,55 @@
 @page "/cart"
 @using Data
 @inject CartService CartService
+@inject NavigationManager UriHelper
 
 <h1>Shopping Cart</h1>
 
 @code
 {
-    private List<Game> GamesInCart = new();
+    public IDictionary<Game, int> GamesInCart = new Dictionary<Game, int>();
+    private float Cost = 0;
+    private float Tax;
+    private float Total;
+    private string TaxString;
+    private string TotalString;
+    
     protected override void OnInitialized()
     {
         GamesInCart = CartService.GetProductsInCart();
     }
+
+    private void Checkout() 
+    {
+        UriHelper.NavigateTo("/Checkout");
+    }
 }
 
-<div>Games in cart:</div>
 <div class="d-flex flex-column">
-    @foreach (var game in GamesInCart)
+    @foreach (KeyValuePair<Game, int> game in GamesInCart)
     {
-        <GameDetail Game="game" ShowBuyButton="false"></GameDetail>
+        <GameDetail Game="game.Key" Quantity="game.Value" InCart="true"></GameDetail>
+        Cost += (game.Key.Price * game.Value);
+        Tax = (Cost * 6.35f) / 100.0f;
+        Total = Cost + Tax;
+        TaxString = String.Format("{0:0.00}",Tax);
+        TotalString = String.Format("{0:0.00}",Total);
     }
 </div>
+@if(CartService.CartQuantity > 0) 
+{
+    <br>
+    <hr size="25" noshade>
+    <h4>Subtotal: $@Cost</h4>
+    <h4>Tax:      $@TaxString</h4>
+    <hr size="25" noshade>
+    <h3>Total:    $@TotalString</h3>
+    <br>
+    <br>
+    <button id="CheckOutButton" name="CheckOutButton" @onclick="Checkout">Proceed To Checkout</button>
+}
+
+
+
+
 

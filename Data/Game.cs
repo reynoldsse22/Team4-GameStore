@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 public class Game
 {
     public int ID {get;set;}
@@ -14,8 +15,13 @@ public class Game
 
 public enum Console{
     PC,
-    Playstation,
-    XBOX,
+    Playstation_4,
+    Playstation_5,
+    Xbox_360,
+    Xbox_One,
     Switch,
-    Wii
+    Wii,
+    Wii_U,
+    DS,
+    GameBoy
 }

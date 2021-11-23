@@ -30,6 +30,7 @@ namespace BlazorApp
             services.AddServerSideBlazor();
             services.AddSingleton<GameService>();
             services.AddScoped<CartService>();
+            services.AddScoped<WishListService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

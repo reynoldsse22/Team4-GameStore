@@ -6,7 +6,7 @@
 
 @code 
 {
-    private List<Game> Games;
+    public IDictionary<Game, int> Games;
 
     protected override void OnInitialized()
     {
@@ -14,9 +14,10 @@
     }
 }
 
-@foreach (var game in Games)
+@foreach (KeyValuePair<Game, int> game in Games)
 {
-    <GameDetail Game="game" ShowBuyButton="true"></GameDetail>
+    
+    <GameDetail Game="game.Key" Quantity="game.Value" InCart="false" InWishList="false"></GameDetail>
 }
 
 <!--<NavLink href="/cart">Check-out</NavLink>-->

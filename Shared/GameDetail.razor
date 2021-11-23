@@ -1,45 +1,81 @@
 @using Data
 @inject CartService CartService
+@inject WishListService WishListService
+@inject NavigationManager UriHelper
 
 @code {
     [Parameter]
     public Game Game { get; set; }
     [Parameter]
-    public bool ShowBuyButton { get; set; }
+    public bool InCart { get; set; }
+    [Parameter]
+    public bool InWishList { get; set; }
+    [Parameter]
+    public int Quantity {get;set;}
 
     private void AddToCart()
     {
-        CartService.AddToCart(Game);
+        CartService.AddToCart(Game, Quantity);
+    }
+    private void RemoveFromCart()
+    {
+        CartService.RemoveFromCart(Game, Quantity);
+       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+    private void AddToWishList()
+    {
+        WishListService.AddToWishList(Game);
+    }
+
+    private void RemoveFromWishList()
+    {
+        WishListService.RemoveFromWishList(Game);
+       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
 }
 
 <li class="game-container">
     <div class="game-card">
-        <a href="/game/@Game.ID">
+        <a href="/Games/@Game.ID">
             <img class="card-image" src="@Game.ImageLink" alt="@Game.Name" />
         </a>
     </div>
     <div class="card-body">
-        <a href="/game/@Game.ID">
+        <a href="/Games/@Game.ID">
             <h4 class="card-title">@Game.Name</h4>
         </a>
         <p>@Game.Description</p>
-        @if(Game.OriginalPrice > @Game.Price)
+        @if(Game.OriginalPrice > @Game.Price && !InCart)
         {
             <h6 class="original-price">@Game.OriginalPrice</h6>
         }
         <h5 class="price">
             $@Game.Price
         </h5>
-         @if (ShowBuyButton)
+         @if (!InCart)
          {
             <div class="card-footer">
-                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
-                <button @onclick="AddToCart">Add To Cart</button>
-                
-             </div>
+                <h6>Qty:</h6>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" @bind="@Quantity" @oninput="(EventArgs) => {Quantity=(int.Parse(EventArgs.Value.ToString()));}" />
+                <button id="cartbutton" name="cartbutton" @onclick="AddToCart">Add To Cart</button>
+            @if (!InWishList)
+            {   
+                <button id="wishlistbutton" name="wishlistbutton" @onclick="AddToWishList">Add To WishList</button>
+            }
+            @if(InWishList && !InCart)   
+            {
+                <button id="removeWishlistButton" name="removeWishlistButton" @onclick="RemoveFromWishList">Remove From WishList</button>
+            }
+            </div>
          }
+         else
+         {
+             <h6>Qty:</h6>
+             <input type="number" name="quantity" min="1" max="5" @bind="@Quantity" @oninput="(EventArgs) => {Quantity=(int.Parse(EventArgs.Value.ToString()));}" />
+             <button id="removebutton" name="removebutton" @onclick="RemoveFromCart">Remove From Cart</button>
+         }
+
     </div>
 </li>
 

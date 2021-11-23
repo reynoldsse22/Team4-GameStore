@@ -98,17 +98,29 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Cart.razor"
+#line 9 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Cart.razor"
  
-    private List<Game> GamesInCart = new();
+    public IDictionary<Game, int> GamesInCart = new Dictionary<Game, int>();
+    private float Cost = 0;
+    private float Tax;
+    private float Total;
+    private string TaxString;
+    private string TotalString;
+    
     protected override void OnInitialized()
     {
         GamesInCart = CartService.GetProductsInCart();
     }
 
+    private void Checkout() 
+    {
+        UriHelper.NavigateTo("/Checkout");
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }

@@ -82,6 +82,13 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\WishList.razor"
+using Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/wishlist")]
     public partial class WishList : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -91,23 +98,18 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\WishList.razor"
-       
-    private List<WishListItem> wishlist = new();
-    private string game;
-
-    private void AddWishItem()
+#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\WishList.razor"
+ 
+    private List<Game> GamesInWishList = new();
+    protected override void OnInitialized()
     {
-        if (!string.IsNullOrWhiteSpace(game))
-        {
-            wishlist.Add(new WishListItem { Title = game });
-            game = string.Empty;
-        }
+        GamesInWishList = WishListService.GetProductsInWishList();
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishListService WishListService { get; set; }
     }
 }
 #pragma warning restore 1591

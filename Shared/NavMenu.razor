@@ -1,4 +1,6 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@inject CartService CartService
+@inject WishListService WishListService
+<div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">BlockBuster</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
@@ -10,25 +12,25 @@
         <li class="nav-item px-3">
             <NavLink class="nav-link" href=""
                 Match="NavLinkMatch.All">
-                <span class="material-icons">home</span>Home
+                <span class="material-icons">home</span> Home 
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="games"
                 Match="NavLinkMatch.All">
-            <span class="material-icons">games</span>Games
+            <span class="material-icons">games</span> Games
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="wishlist"
                 Match="NavLinkMatch.All">
-                <span class="material-icons">receipt_long</span>Wishlist
+                <span class="material-icons">receipt_long</span> Wishlist (@WishListService.WishListQuantity)
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="cart"
                 Match="NavLinkMatch.All">
-                <span class="material-icons">shopping_cart</span>Cart
+                <span class="material-icons">shopping_cart</span> Cart (@CartService.CartQuantity)
             </NavLink>
         </li>
     </ul>
