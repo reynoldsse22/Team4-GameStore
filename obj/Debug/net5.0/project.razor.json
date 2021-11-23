@@ -309,6 +309,39 @@
         }
       },
       {
+        "HashCode": -879960111,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.About",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.About"
+        }
+      },
+      {
+        "HashCode": -859155983,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.About",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -224849593,
         "Kind": "Components.Component",
         "Name": "BlazorApp.App",
@@ -16236,6 +16269,11 @@
     {
       "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\GameList.razor",
       "TargetPath": "Pages\\GameList.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\Pages\\About.razor",
+      "TargetPath": "Pages\\About.razor",
       "FileKind": "component"
     },
     {
