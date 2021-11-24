@@ -45,7 +45,6 @@ public class CustomAuthProvider : AuthenticationStateProvider
     public void removeAuth()
     {
         var identity = new ClaimsIdentity();
-
         var user = new ClaimsPrincipal(identity);
         storage.RemoveItemAsync("email");
         NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(user)));
