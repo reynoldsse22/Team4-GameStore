@@ -1,23 +1,24 @@
 @page "/games"
-@using Data
-@inject GameService GameService
+@inject GameDbService service
 
-<h2>Used Games</h2>
+<h1 style="text-align:center;">Used Games</h1>
 
 @code 
 {
-    public IDictionary<Game, int> Games;
-
-    protected override void OnInitialized()
+    List<Game> Games = new List<Game>();
+    protected override async Task OnInitializedAsync()
     {
-        Games = GameService.GetAllGames();      
+        await RefreshGames();
+    }
+
+    private async Task RefreshGames()
+    {
+        Games = await service.GetGames();
     }
 }
 
-@foreach (KeyValuePair<Game, int> game in Games)
+@foreach (var game in Games)
 {
     
-    <GameDetail Game="game.Key" Quantity="game.Value" InCart="false" InWishList="false"></GameDetail>
+    <GameDetail Game="game" InCart="false" InWishList="false"></GameDetail>
 }
-
-<!--<NavLink href="/cart">Check-out</NavLink>-->

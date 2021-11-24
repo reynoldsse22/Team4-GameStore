@@ -10,6 +10,7 @@ public class Game
     public string Description{get;set;}
 
     public Console Console{get;set;}
+    public int Quantity{get;set;} = 0;
 
 }
 
