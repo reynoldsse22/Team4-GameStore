@@ -11,19 +11,19 @@
         </div>
         <div class="border col-5"> 
             <div class="col-12">
-                <h3 style = "color=Red; font-weight: bold">BlockBuster Login</h3>
+                <h3 style = "color=Red; font-weight: bold">Blockbuster Login</h3>
             </div>
             <div>
                 <br />
             </div>
             <div class="col-10">
-                <input class="form-control inputs" @bind="@users.email" placeholder="Email Address" />
+                <input class="form-control inputs" @bind="@users.Email" placeholder="Email Address" />
             </div>
             <div>
                 <br />
             </div>
             <div class="col-10">
-                <input class="form-control inputs" @bind="@users.password" placeholder="Password" />
+                <input class="form-control inputs" @bind="@users.Password" placeholder="Password" />
             </div>
             <br />
             <div class="col-5">
@@ -34,19 +34,19 @@
 </EditForm>
 
 @code {
-    private user users;
+    private User users;
 
     protected override Task OnInitializedAsync()
     {
-        users = new user();
+        users = new User();
         return base.OnInitializedAsync();
     }
     private async Task<bool> ValidateUser()
     {
-        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.email);
+        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.Email);
         NavigationManager.NavigateTo("/games");
 
-        await sessionStorage.SetItemAsync("email", users.email);
+        await sessionStorage.SetItemAsync("email", users.Email);
         return await Task.FromResult(true);
     }
 

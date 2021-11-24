@@ -46,6 +46,11 @@ namespace BlazorApp
                 options.UseSqlite("Data Source = Wishlist.db");
             });
             services.AddScoped<WishlistDbService>();
+            services.AddDbContext<UserDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = User.db");
+            });
+            services.AddScoped<UserDbService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
         }
 

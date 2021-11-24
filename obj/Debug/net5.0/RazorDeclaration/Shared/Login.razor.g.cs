@@ -86,19 +86,19 @@ using BlazorApp;
 #nullable restore
 #line 36 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
        
-    private user users;
+    private User users;
 
     protected override Task OnInitializedAsync()
     {
-        users = new user();
+        users = new User();
         return base.OnInitializedAsync();
     }
     private async Task<bool> ValidateUser()
     {
-        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.email);
+        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.Email);
         NavigationManager.NavigateTo("/games");
 
-        await sessionStorage.SetItemAsync("email", users.email);
+        await sessionStorage.SetItemAsync("email", users.Email);
         return await Task.FromResult(true);
     }
 

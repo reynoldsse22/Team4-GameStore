@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-public class GameDbService
+public class UserDbService
 {
     #region Private members
-    private GameDbContext dbContext;
+    private UserDbContext dbContext;
     #endregion
     #region Constructor
-    public GameDbService(GameDbContext dbContext)
+    public UserDbService(UserDbContext dbContext)
     {
         this.dbContext = dbContext;
     }
@@ -19,41 +19,41 @@ public class GameDbService
     /// This method returns the list of product
     /// </summary>
     /// <returns></returns>
-    public async Task<List<Game>> GetGames()
+    public async Task<List<User>> GetUsers()
     {
-        return await dbContext.Game.ToListAsync();
+        return await dbContext.User.ToListAsync();
     }
     /// <summary>
-    /// This method add a new game to the DbContext and saves it
+    /// This method add a new product to the DbContext and saves it
     /// </summary>
-    /// <param name="game"></param>
+    /// <param name="user"></param>
     /// <returns></returns>
-    public async Task<Game> AddGameAsync(Game game)
+    public async Task<User> AddGameAsync(User user)
     {
         try
         {
-            dbContext.Game.Add(game);
+            dbContext.User.Add(user);
             await dbContext.SaveChangesAsync();
         }
         catch (Exception)
         {
             throw;
         }
-        return game;
+        return user;
     }
     /// <summary>
-    /// This method update and existing game and saves the changes
+    /// This method update and existing user and saves the changes
     /// </summary>
-    /// <param name="game"></param>
+    /// <param name="user"></param>
     /// <returns></returns>
-    public async Task<Game> UpdateGameAsync(Game game)
+    public async Task<User> UpdateUserAsync(User user)
     {
         try
         {
-            var GameExist = dbContext.Game.FirstOrDefault(p => p.ID == game.ID);
-            if (GameExist != null)
+            var UserExist = dbContext.User.FirstOrDefault(p => p.ID == user.ID);
+            if (UserExist != null)
             {
-                dbContext.Update(game);
+                dbContext.Update(user);
                 await dbContext.SaveChangesAsync();
             }
         }
@@ -61,18 +61,18 @@ public class GameDbService
         {
             throw;
         }
-        return game;
+        return user;
     }
     /// <summary>
-    /// This method removes and existing game from the DbContext and saves it
+    /// This method removes and existing user from the DbContext and saves it
     /// </summary>
-    /// <param name="game"></param>
+    /// <param name="user"></param>
     /// <returns></returns>
-    public async Task DeleteGameAsync(Game game)
+    public async Task DeleteUserAsync(User user)
     {
         try
         {
-            dbContext.Game.Remove(game);
+            dbContext.User.Remove(user);
             await dbContext.SaveChangesAsync();
         }
         catch (Exception)
