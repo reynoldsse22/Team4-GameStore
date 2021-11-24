@@ -82,13 +82,6 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Cart.razor"
-using Data;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/cart")]
     public partial class Cart : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -100,27 +93,36 @@ using Data;
 #nullable restore
 #line 9 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Cart.razor"
  
-    public IDictionary<Game, int> GamesInCart = new Dictionary<Game, int>();
+    List<Game> Games = new List<Game>();
     private float Cost = 0;
-    private float Tax;
-    private float Total;
+    private float Tax = 0;
+    private float Total = 0;
     private string TaxString;
     private string TotalString;
-    
-    protected override void OnInitialized()
-    {
-        GamesInCart = CartService.GetProductsInCart();
-    }
+    private int CartQuantity = 0;
 
     private void Checkout() 
     {
         UriHelper.NavigateTo("/Checkout");
     }
 
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshCart();
+    }
+
+    private async Task RefreshCart()
+    {
+        Games = await service.GetCart();
+    }
+
+
+
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartDbService service { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }

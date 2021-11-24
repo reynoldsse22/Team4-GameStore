@@ -82,13 +82,6 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 1 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\GameDetail.razor"
-using Data;
-
-#line default
-#line hidden
-#nullable disable
     public partial class GameDetail : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -106,7 +99,7 @@ using Data;
     [Parameter]
     public bool InWishList { get; set; }
     [Parameter]
-    public int Quantity {get;set;}
+    public int Quantity {get;set;} = 1;
 
     private void AddToCart()
     {
@@ -115,17 +108,31 @@ using Data;
     private void RemoveFromCart()
     {
         CartService.RemoveFromCart(Game, Quantity);
-       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
-    }
-    private void AddToWishList()
-    {
-        WishListService.AddToWishList(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
-    private void RemoveFromWishList()
+    private async Task AddToWishList()
     {
-        WishListService.RemoveFromWishList(Game);
-       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+        await WishlistDbService.AddGameAsync(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task RemoveFromWishList()
+    {
+        await WishlistDbService.DeleteGameAsync(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task AddToCartdb()
+    {
+        await CartDbService.AddGameAsync(Game, Quantity);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task RemoveFromCartdb()
+    {
+        await CartDbService.DeleteGameAsync(Game, Quantity);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
 
@@ -133,7 +140,8 @@ using Data;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishListService WishListService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishlistDbService WishlistDbService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartDbService CartDbService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }

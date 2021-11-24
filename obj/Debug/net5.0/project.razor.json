@@ -12,35 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1959485522,
+        "HashCode": -879960111,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Index",
+        "Name": "BlazorApp.Pages.About",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Index"
+          "Common.TypeName": "BlazorApp.Pages.About"
         }
       },
       {
-        "HashCode": 53475371,
+        "HashCode": -859155983,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Index",
+        "Name": "BlazorApp.Pages.About",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Index"
+            "TagName": "BlazorApp.Pages.About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Index",
+          "Common.TypeName": "BlazorApp.Pages.About",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -177,39 +177,6 @@
         }
       },
       {
-        "HashCode": 1747013910,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WishList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList"
-        }
-      },
-      {
-        "HashCode": 1712237801,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.WishList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -161834752,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Checkout",
@@ -276,6 +243,72 @@
         }
       },
       {
+        "HashCode": 1747013910,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.WishList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WishList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.WishList"
+        }
+      },
+      {
+        "HashCode": 1712237801,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.WishList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.WishList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.WishList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1959485522,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Index",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 53475371,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Index",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1111749388,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Cart",
@@ -305,39 +338,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Pages.Cart",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -879960111,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About"
-        }
-      },
-      {
-        "HashCode": -859155983,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -471,39 +471,6 @@
         }
       },
       {
-        "HashCode": -1613854634,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.NavMenu",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -1179575551,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.NavMenu",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 325972236,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Shared.GameDetail",
@@ -601,6 +568,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Shared.GameDetail",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1613854634,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.NavMenu",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -1179575551,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.NavMenu",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

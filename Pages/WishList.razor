@@ -1,22 +1,24 @@
 ﻿@page "/wishlist"
-@using Data
-@inject WishListService WishListService
+@inject WishlistDbService service
 
-<h1>WishList</h1>
+<h1 style="text-align:center;">WishList</h1>
 
 @code
 {
-    private List<Game> GamesInWishList = new();
-    protected override void OnInitialized()
+    List<Game> Games = new List<Game>();
+    protected override async Task OnInitializedAsync()
     {
-        GamesInWishList = WishListService.GetProductsInWishList();
+        await RefreshGames();
+    }
+
+    private async Task RefreshGames()
+    {
+        Games = await service.GetWishlist();
+        
     }
 }
-
-<div class="d-flex flex-column">
-    @foreach (var game in GamesInWishList)
-    {
-        <GameDetail Game="game" InWishList="true"></GameDetail>
-    }
-</div>
+@foreach (var game in Games)
+{
+    <GameDetail Game="game" InCart="false" InWishList="true"></GameDetail>
+}
 

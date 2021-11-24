@@ -90,6 +90,51 @@ using BlazorApp.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 106 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Index.razor"
+       
+
+    List<Game> Games = new List<Game>();
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshGames();
+    }
+
+    private async Task RefreshGames()
+    {
+        Games = await service.GetGames();
+    }
+
+    public Game NewGame { get; set; } = new Game();
+    private async Task AddNewGame()
+    {
+        await service.AddGameAsync(NewGame);
+        NewGame = new Game();
+        await RefreshGames();
+    }
+
+    Game UpdateGame = new Game();
+    private void SetProductForUpdate(Game game)
+    {
+        UpdateGame = game;
+    }
+
+    private async Task UpdateGameData()
+    {
+        await service.UpdateGameAsync(UpdateGame);
+        await RefreshGames();
+    }
+
+    private async Task DeleteGame(Game game)
+    {
+        await service.DeleteGameAsync(game);
+        await RefreshGames();
+    } 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GameDbService service { get; set; }
     }
 }
 #pragma warning restore 1591

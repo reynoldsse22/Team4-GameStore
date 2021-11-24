@@ -1,6 +1,6 @@
-@using Data
 @inject CartService CartService
-@inject WishListService WishListService
+@inject CartDbService CartDbService
+@inject WishlistDbService WishlistDbService
 @inject NavigationManager UriHelper
 
 @code {
@@ -11,7 +11,7 @@
     [Parameter]
     public bool InWishList { get; set; }
     [Parameter]
-    public int Quantity {get;set;}
+    public int Quantity {get;set;} = 1;
 
     private void AddToCart()
     {
@@ -20,17 +20,31 @@
     private void RemoveFromCart()
     {
         CartService.RemoveFromCart(Game, Quantity);
-       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
-    }
-    private void AddToWishList()
-    {
-        WishListService.AddToWishList(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
-    private void RemoveFromWishList()
+    private async Task AddToWishList()
     {
-        WishListService.RemoveFromWishList(Game);
-       // UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+        await WishlistDbService.AddGameAsync(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task RemoveFromWishList()
+    {
+        await WishlistDbService.DeleteGameAsync(Game);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task AddToCartdb()
+    {
+        await CartDbService.AddGameAsync(Game, Quantity);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    private async Task RemoveFromCartdb()
+    {
+        await CartDbService.DeleteGameAsync(Game, Quantity);
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
 }
@@ -48,7 +62,7 @@
         <p>@Game.Description</p>
         @if(Game.OriginalPrice > @Game.Price && !InCart)
         {
-            <h6 class="original-price">@Game.OriginalPrice</h6>
+            <h6 class="original-price">$@Game.OriginalPrice</h6>
         }
         <h5 class="price">
             $@Game.Price
@@ -58,14 +72,14 @@
             <div class="card-footer">
                 <h6>Qty:</h6>
                 <input type="number" id="quantity" name="quantity" min="1" max="5" @bind="@Quantity" @oninput="(EventArgs) => {Quantity=(int.Parse(EventArgs.Value.ToString()));}" />
-                <button id="cartbutton" name="cartbutton" @onclick="AddToCart">Add To Cart</button>
+                <button id="cartbutton" name="cartbutton" @onclick="(() => AddToCartdb())">Add To Cart</button>
             @if (!InWishList)
             {   
                 <button id="wishlistbutton" name="wishlistbutton" @onclick="AddToWishList">Add To WishList</button>
             }
             @if(InWishList && !InCart)   
             {
-                <button id="removeWishlistButton" name="removeWishlistButton" @onclick="RemoveFromWishList">Remove From WishList</button>
+                <button class="btn btn-danger" id="removeWishlistButton" name="removeWishlistButton" @onclick="RemoveFromWishList"  >Remove From WishList</button>
             }
             </div>
          }
@@ -73,7 +87,7 @@
          {
              <h6>Qty:</h6>
              <input type="number" name="quantity" min="1" max="5" @bind="@Quantity" @oninput="(EventArgs) => {Quantity=(int.Parse(EventArgs.Value.ToString()));}" />
-             <button id="removebutton" name="removebutton" @onclick="RemoveFromCart">Remove From Cart</button>
+             <button class="btn btn-danger" id="removebutton" name="removebutton" @onclick="(() => RemoveFromCartdb())">Remove From Cart</button>
          }
 
     </div>

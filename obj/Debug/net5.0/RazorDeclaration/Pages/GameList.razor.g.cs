@@ -82,13 +82,6 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\GameList.razor"
-using Data;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/games")]
     public partial class GameList : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,19 +91,23 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\GameList.razor"
+#line 7 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\GameList.razor"
  
-    public IDictionary<Game, int> Games;
-
-    protected override void OnInitialized()
+    List<Game> Games = new List<Game>();
+    protected override async Task OnInitializedAsync()
     {
-        Games = GameService.GetAllGames();      
+        await RefreshGames();
+    }
+
+    private async Task RefreshGames()
+    {
+        Games = await service.GetGames();
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GameService GameService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GameDbService service { get; set; }
     }
 }
 #pragma warning restore 1591

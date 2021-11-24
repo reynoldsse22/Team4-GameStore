@@ -1,42 +1,53 @@
 @page "/cart"
-@using Data
 @inject CartService CartService
+@inject CartDbService service
 @inject NavigationManager UriHelper
 
-<h1>Shopping Cart</h1>
+<h1 style="text-align:center;">Shopping Cart</h1>
 
 @code
 {
-    public IDictionary<Game, int> GamesInCart = new Dictionary<Game, int>();
+    List<Game> Games = new List<Game>();
     private float Cost = 0;
-    private float Tax;
-    private float Total;
+    private float Tax = 0;
+    private float Total = 0;
     private string TaxString;
     private string TotalString;
-    
-    protected override void OnInitialized()
-    {
-        GamesInCart = CartService.GetProductsInCart();
-    }
+    private int CartQuantity = 0;
 
     private void Checkout() 
     {
         UriHelper.NavigateTo("/Checkout");
     }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshCart();
+    }
+
+    private async Task RefreshCart()
+    {
+        Games = await service.GetCart();
+    }
+
+
 }
 
 <div class="d-flex flex-column">
-    @foreach (KeyValuePair<Game, int> game in GamesInCart)
+    @foreach (var game in Games)
     {
-        <GameDetail Game="game.Key" Quantity="game.Value" InCart="true"></GameDetail>
-        Cost += (game.Key.Price * game.Value);
+        <GameDetail Game="game" Quantity="game.Quantity" InCart="true"></GameDetail>
+        Cost += (game.Price * game.Quantity);
         Tax = (Cost * 6.35f) / 100.0f;
         Total = Cost + Tax;
         TaxString = String.Format("{0:0.00}",Tax);
         TotalString = String.Format("{0:0.00}",Total);
+        CartQuantity += game.Quantity;
     }
 </div>
-@if(CartService.CartQuantity > 0) 
+
+
+@if(CartQuantity > 0) 
 {
     <br>
     <hr size="25" noshade>
@@ -46,7 +57,7 @@
     <h3>Total:    $@TotalString</h3>
     <br>
     <br>
-    <button id="CheckOutButton" name="CheckOutButton" @onclick="Checkout">Proceed To Checkout</button>
+    <button class="btn btn-info" id="CheckOutButton" name="CheckOutButton" @onclick="Checkout">Proceed To Checkout</button>
 }
 
 

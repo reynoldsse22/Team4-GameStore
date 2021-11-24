@@ -90,7 +90,7 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\NavMenu.razor"
+#line 40 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
@@ -104,7 +104,8 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishListService WishListService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WishlistDbService WishListDbService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartDbService CartDbService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private CartService CartService { get; set; }
     }
 }

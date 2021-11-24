@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BlazorApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp
 {
@@ -26,11 +26,25 @@ namespace BlazorApp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<GameService>();
             services.AddScoped<CartService>();
-            services.AddScoped<WishListService>();
+            services.AddDbContext<GameDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Games.db");
+            });
+            services.AddScoped<GameDbService>();
+            services.AddDbContext<CartDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Cart.db");
+            });
+            services.AddScoped<CartDbService>();
+            services.AddDbContext<WishlistDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Wishlist.db");
+            });
+            services.AddScoped<WishlistDbService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
