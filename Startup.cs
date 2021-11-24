@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BlazorApp.Data;
 using Blazored.SessionStorage;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp
 {
@@ -30,10 +30,22 @@ namespace BlazorApp
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<GameService>();
             services.AddBlazoredSessionStorage();
-            services.AddScoped<CartService>();
-            services.AddScoped<WishListService>();
+            services.AddDbContext<GameDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Games.db");
+            });
+            services.AddScoped<GameDbService>();
+            services.AddDbContext<CartDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Cart.db");
+            });
+            services.AddScoped<CartDbService>();
+            services.AddDbContext<WishlistDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Wishlist.db");
+            });
+            services.AddScoped<WishlistDbService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
         }
 

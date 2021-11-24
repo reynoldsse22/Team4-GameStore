@@ -1,4 +1,3 @@
-@inject CartService CartService
 @inject CartDbService CartDbService
 @inject WishlistDbService WishlistDbService
 @inject NavigationManager UriHelper
@@ -12,17 +11,6 @@
     public bool InWishList { get; set; }
     [Parameter]
     public int Quantity {get;set;} = 1;
-
-    private void AddToCart()
-    {
-        CartService.AddToCart(Game, Quantity);
-    }
-    private void RemoveFromCart()
-    {
-        CartService.RemoveFromCart(Game, Quantity);
-        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
-    }
-
     private async Task AddToWishList()
     {
         await WishlistDbService.AddGameAsync(Game);
@@ -50,7 +38,7 @@
 }
 
 <li class="game-container">
-    <div class="game-card"> 
+    <div class="game-card">
         <a href="/Games/@Game.ID">
             <img class="card-image" src="@Game.ImageLink" alt="@Game.Name" />
         </a>
