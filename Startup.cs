@@ -51,6 +51,11 @@ namespace BlazorApp
                 options.UseSqlite("Data Source = User.db");
             });
             services.AddScoped<UserDbService>();
+            services.AddDbContext<ReviewDbContext>(options =>
+            {
+                options.UseSqlite("Data Source = Review.db");
+            });
+            services.AddScoped<ReviewDbService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
         }
 

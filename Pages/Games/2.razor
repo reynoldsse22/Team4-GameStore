@@ -1,3 +1,41 @@
 @page "/Games/2"
+@inject GameDbService service
+@inject ReviewDbService reviewService
+@using BlazorApp.Shared
 
-<h1>Mario</h1>
+@code 
+{
+    List<Game> Games = new List<Game>();
+    
+    List<Review> Reviews = new List<Review>();
+    Game game = new Game();
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshGames();
+        await RefreshReviews();
+    }
+
+    private async Task RefreshGames()
+    {
+        Games = await service.GetGames(); 
+        game = Games.Where(x => x.ID == 2).FirstOrDefault();
+    }
+
+    private async Task RefreshReviews()
+    {
+        Reviews = await reviewService.GetReviews(); 
+    }
+    
+}
+<GameDetail Game="game" InCart="false" InWishList="false"></GameDetail>
+<br>
+<h2 style="text-align:left">Reviews</h2>
+<hr style="border:1px solid #0f0e0f">
+@foreach (var review in Reviews)
+{
+    if(review.GameID == 2)
+    {
+        <ReviewDetail Review="review"></ReviewDetail>
+    }
+    
+}

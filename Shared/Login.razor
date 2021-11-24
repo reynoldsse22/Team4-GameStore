@@ -57,7 +57,7 @@
             {
                 if(users.Password == u.Password)
                 {
-                    ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.Email);
+                    ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.FirstName);
                     NavigationManager.NavigateTo("/games");
                     await sessionStorage.SetItemAsync("email", users.Email);
                     count++;

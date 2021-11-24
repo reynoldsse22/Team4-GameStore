@@ -31,10 +31,10 @@ public class CustomAuthProvider : AuthenticationStateProvider
         return await Task.FromResult(new AuthenticationState(user));
     }
 
-    public void MakeUserAuth(string email)
+    public void MakeUserAuth(string firstName)
     {
         var identity = new ClaimsIdentity(new[] {
-            new Claim(ClaimTypes.Name, email),
+            new Claim(ClaimTypes.Name, firstName),
         }, "apiauth_type");
 
         var user = new ClaimsPrincipal(identity);

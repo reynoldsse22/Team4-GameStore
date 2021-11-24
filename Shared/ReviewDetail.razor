@@ -1,0 +1,34 @@
+@inject NavigationManager UriHelper
+@inject ReviewDbService services
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+@code {
+
+    [Parameter]
+    public Review Review { get; set; }
+    [Parameter]
+    public int Quantity {get;set;} = 1;
+
+
+}
+
+<div class="review-body">
+    <div class="review-content">
+    <span class="heading">@Review.Username</span>
+    @for(int i = 1; i <= 5; i++)
+    {
+        if(i <= Review.Stars)
+        {
+            <span class="fa fa-star checked"></span>
+        }
+        else
+        {
+            <span class="fa fa-star"></span>
+        }
+    }
+    <span class="date">@Review.Date.ToShortDateString()</span>
+    <p class="description">@Review.ReviewDescription</p>
+    
+    <hr style="border:3px solid #f1f1f1">
+    </div>
+</div>
