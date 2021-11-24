@@ -109,6 +109,11 @@ input:valid+span[b-3d3p0cofe1]:after {
     border-radius: 12px;
     padding: 5px
 }
+.red[b-jwlzop8dzi]{
+    color: red;
+    font-size: small;
+    font-style: italic;
+}
 /* _content/BlazorApp/Shared/MainLayout.razor.rz.scp.css */
 .page[b-3dsd3z3yec] {
     position: relative;

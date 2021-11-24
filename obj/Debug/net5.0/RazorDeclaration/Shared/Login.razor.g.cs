@@ -13,63 +13,63 @@ namespace BlazorApp.Shared
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 1 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 2 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 3 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 4 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 5 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 6 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 7 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 8 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\_Imports.razor"
+#line 9 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\_Imports.razor"
 using BlazorApp;
 
 #line default
@@ -84,10 +84,10 @@ using BlazorApp;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
+#line 40 "C:\Users\cocar\Documents\GitHub\Team4-GameStore\Shared\Login.razor"
        
     private User users;
-
+    private string list;
     protected override Task OnInitializedAsync()
     {
         users = new User();
@@ -95,10 +95,28 @@ using BlazorApp;
     }
     private async Task<bool> ValidateUser()
     {
-        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.Email);
-        NavigationManager.NavigateTo("/games");
+        int count = 0;
+        List<User> people;
+        people = await UserDbService.GetUsers();
 
-        await sessionStorage.SetItemAsync("email", users.Email);
+        foreach(User u in people)
+        {
+            if(users.Email == u.Email)
+            {
+                if(users.Password == u.Password)
+                {
+                    ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.Email);
+                    NavigationManager.NavigateTo("/games");
+                    await sessionStorage.SetItemAsync("email", users.Email);
+                    count++;
+                }
+            }
+        }
+        if(count == 0)
+        {
+            list = "Wrong Username or Password";
+        }
+
         return await Task.FromResult(true);
     }
 
@@ -107,6 +125,8 @@ using BlazorApp;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserDbService UserDbService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.SessionStorage.ISessionStorageService sessionStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }

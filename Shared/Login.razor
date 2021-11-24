@@ -3,6 +3,8 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
 @inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@inject UserDbService UserDbService
+@inject NavigationManager UriHelper
 
 <EditForm Model="@users" OnValidSubmit="@ValidateUser">
     <center> 
@@ -14,6 +16,8 @@
                 <h3 style = "color=Red; font-weight: bold">Blockbuster Login</h3>
             </div>
             <div>
+                <br />
+                <div class="red"> @list </div>
                 <br />
             </div>
             <div class="col-10">
@@ -35,7 +39,7 @@
 
 @code {
     private User users;
-
+    private string list;
     protected override Task OnInitializedAsync()
     {
         users = new User();
@@ -43,10 +47,28 @@
     }
     private async Task<bool> ValidateUser()
     {
-        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.Email);
-        NavigationManager.NavigateTo("/games");
+        int count = 0;
+        List<User> people;
+        people = await UserDbService.GetUsers();
 
-        await sessionStorage.SetItemAsync("email", users.Email);
+        foreach(User u in people)
+        {
+            if(users.Email == u.Email)
+            {
+                if(users.Password == u.Password)
+                {
+                    ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.Email);
+                    NavigationManager.NavigateTo("/games");
+                    await sessionStorage.SetItemAsync("email", users.Email);
+                    count++;
+                }
+            }
+        }
+        if(count == 0)
+        {
+            list = "Wrong Username or Password";
+        }
+
         return await Task.FromResult(true);
     }
 

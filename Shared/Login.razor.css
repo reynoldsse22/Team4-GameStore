@@ -12,3 +12,8 @@
     border-radius: 12px;
     padding: 5px
 }
+.red{
+    color: red;
+    font-size: small;
+    font-style: italic;
+}
