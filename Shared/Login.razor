@@ -1,0 +1,55 @@
+﻿@page "/login"
+@inherits LayoutComponentBase;
+@using BlazorApp.Data;
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+
+<EditForm Model="@users" OnValidSubmit="@ValidateUser">
+    <center> 
+        <div>
+            <br /> <br /> <br /> 
+        </div>
+        <div class="border col-5"> 
+            <div class="col-12">
+                <h3 style = "color=Red; font-weight: bold">Gaming Store Login</h3>
+            </div>
+            <div>
+                <br />
+            </div>
+            <div class="col-10">
+                <input class="form-control inputs" @bind="@users.email" placeholder="Email Address" />
+            </div>
+            <div>
+                <br />
+            </div>
+            <div class="col-10">
+                <input class="form-control inputs" @bind="@users.password" placeholder="Password" />
+            </div>
+            <br />
+            <div class="col-5">
+                <input type="submit" class="form-control btn btn-primary" value="Login" />
+            </div>
+        </div>
+    </center>
+</EditForm>
+
+@code {
+    private user users;
+
+    protected override Task OnInitializedAsync()
+    {
+        users = new user();
+        return base.OnInitializedAsync();
+    }
+    private async Task<bool> ValidateUser()
+    {
+        ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(users.email);
+        NavigationManager.NavigateTo("/games");
+
+        await sessionStorage.SetItemAsync("email", users.email);
+        return await Task.FromResult(true);
+    }
+
+    
+}

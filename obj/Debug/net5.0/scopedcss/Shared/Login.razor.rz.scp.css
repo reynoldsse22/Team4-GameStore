@@ -1,0 +1,14 @@
+.page[b-jwlzop8dzi] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs[b-jwlzop8dzi] {
+    margin-left: 20px;
+}
+.border[b-jwlzop8dzi]{
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px
+}

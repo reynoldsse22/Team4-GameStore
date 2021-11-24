@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorApp.Data;
+using Blazored.SessionStorage;
 
 namespace BlazorApp
 {
@@ -29,8 +31,10 @@ namespace BlazorApp
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<GameService>();
+            services.AddBlazoredSessionStorage();
             services.AddScoped<CartService>();
             services.AddScoped<WishListService>();
+            services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +54,9 @@ namespace BlazorApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+            
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

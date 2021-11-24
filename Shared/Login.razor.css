@@ -1,0 +1,14 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    margin-left: 20px;
+}
+.border{
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px
+}

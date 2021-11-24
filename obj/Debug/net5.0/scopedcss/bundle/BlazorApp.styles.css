@@ -92,6 +92,21 @@ input:valid+span[b-3d3p0cofe1]:after {
   content: '✓';
   padding-left: 5px;
 }
+/* _content/BlazorApp/Shared/Login.razor.rz.scp.css */
+.page[b-jwlzop8dzi] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs[b-jwlzop8dzi] {
+    margin-left: 20px;
+}
+.border[b-jwlzop8dzi]{
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px
+}
 /* _content/BlazorApp/Shared/MainLayout.razor.rz.scp.css */
 .page[b-3dsd3z3yec] {
     position: relative;
