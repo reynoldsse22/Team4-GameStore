@@ -1,0 +1,90 @@
+@inject NavigationManager UriHelper
+@inject ReviewDbService services
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+@code {
+
+    [Parameter]
+    public Review NewReview { get; set; } = new Review();
+
+    [Parameter]
+    public int GameID {get;set;}
+    List<Review> Reviews = new List<Review>();
+
+    public int ID {get;set;}
+
+ 
+    private async Task AddNewReview()
+    {
+        NewReview.ID = Reviews.Count + 1;
+        NewReview.GameID = GameID;
+        NewReview.Date = DateTime.Today;
+        await services.AddReviewAsync(NewReview);
+        NewReview = new Review();
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshReviews();
+    }
+
+    private async Task RefreshReviews()
+    {
+        Reviews = await services.GetReviews();
+    }
+
+    private void setStars1()
+    {
+        NewReview.Stars = 1;
+    }
+
+    private void setStars2()
+    {
+        NewReview.Stars = 2;
+    }
+
+    private void setStars3()
+    {
+        NewReview.Stars = 3;
+    }
+
+    private void setStars4()
+    {
+        NewReview.Stars = 4;
+    }
+
+    private void setStars5()
+    {
+        NewReview.Stars = 5;
+    }
+}
+
+<br>
+ <div class="row">
+  <div class="column">
+  </div>
+  <div class="column">
+      <div class="review-heading">Add New Review</div>
+      <br>
+      <div class="form-group">
+            <label style="display: block; font-size: 25px; text-align:center;" for="name">Name</label>
+            <input type="text" id="name" class="form-control" @bind-value="@NewReview.Username" />
+        </div>
+        <label style="display: block; font-size: 25px; text-align:center;" for="Description">Review</label>
+        <div class="icons">
+            <button class="btn"  @onclick="setStars1"><i class="fa fa-star"></i></button>
+            <button class="btn"  @onclick="setStars2"><i class="fa fa-star"></i></button>
+            <button class="btn"  @onclick="setStars3"><i class="fa fa-star"></i></button>
+            <button class="btn"  @onclick="setStars4"><i class="fa fa-star"></i></button>
+            <button class="btn"  @onclick="setStars5"><i class="fa fa-star"></i></button>
+        </div>
+        <textarea  id="Description"  @bind="@NewReview.ReviewDescription" ></textarea>
+        <div class="text-center p-3 mb-3">
+                    <button class="btn btn-info" @onclick="AddNewReview"> Add Review</button>
+         </div>
+  </div>
+  <div class="column">
+  </div>
+</div>
+

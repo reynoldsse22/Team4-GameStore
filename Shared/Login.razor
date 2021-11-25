@@ -5,6 +5,7 @@
 @inject Blazored.SessionStorage.ISessionStorageService sessionStorage
 @inject UserDbService UserDbService
 @inject NavigationManager UriHelper
+@using BlazorApp.Shared
 
 <EditForm Model="@users" OnValidSubmit="@ValidateUser">
     <center> 
@@ -21,7 +22,7 @@
                 <br />
             </div>
             <div class="col-10">
-                <input class="form-control inputs" @bind="@users.Email" placeholder="Email Address" />
+                <input class="form-control inputs" @bind="@email" placeholder="Email Address" />
             </div>
             <div>
                 <br />
@@ -35,11 +36,22 @@
             </div>
         </div>
     </center>
+            
 </EditForm>
 
+@((MarkupString)@email)
+
+
+
 @code {
+
+    
     private User users;
     private string list;
+
+    private string email;
+
+    private string password;
     protected override Task OnInitializedAsync()
     {
         users = new User();
@@ -53,13 +65,13 @@
 
         foreach(User u in people)
         {
-            if(users.Email == u.Email)
+            if(email == u.Email)
             {
                 if(users.Password == u.Password)
                 {
                     ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.FirstName);
                     NavigationManager.NavigateTo("/games");
-                    await sessionStorage.SetItemAsync("email", users.Email);
+                    await sessionStorage.SetItemAsync("email", email);
                     count++;
                 }
             }

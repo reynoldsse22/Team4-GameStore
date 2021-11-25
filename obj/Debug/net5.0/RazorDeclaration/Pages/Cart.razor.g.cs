@@ -100,6 +100,7 @@ using BlazorApp.Shared;
     private string TaxString;
     private string TotalString;
     private int CartQuantity = 0;
+    public string someString;
 
     private void Checkout() 
     {
@@ -115,7 +116,6 @@ using BlazorApp.Shared;
     {
         Games = await service.GetCart();
     }
-
 
 
 #line default

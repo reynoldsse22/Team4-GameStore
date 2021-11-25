@@ -78,7 +78,7 @@ public class UserDbService
         catch (Exception)
         {
             throw;
-        }
+        } 
     }
     #endregion
 }

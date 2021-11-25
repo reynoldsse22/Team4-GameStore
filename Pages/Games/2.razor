@@ -10,6 +10,8 @@
     List<Review> Reviews = new List<Review>();
     Game game = new Game();
 
+    Review newReview = new Review();
+
     public int Stars{get;set;} = 0;
     public int Rating = 0;
     public float Average{get;set;} = 0;
@@ -77,7 +79,7 @@
 {
   if(review.GameID == 2)
     {
-      if(review.Stars == 1){
+      if(review.Stars == 2){
         num1Stars++;
       }else if(review.Stars == 2){
           num2Stars++;
@@ -189,6 +191,8 @@
     }
     
 }
+
+<ReviewSubmission NewReview="newReview" GameID="2"></ReviewSubmission>
 
 <style>
   * {

@@ -1,0 +1,36 @@
+.btn:hover {
+    background-color: orange;
+  }
+
+  .btn:after {
+    background-color: orange;
+  }
+
+  .review-heading{
+      background-color: indigo;
+      color: white;
+      font-size: 25px;
+      position: center;
+      text-align: center;  
+  }
+
+  .row {
+    display: flex;
+    align-content: center;
+  }
+  
+  .column {
+    flex: 33%;
+  }
+
+  #Description{
+      width: 80%;
+      height: 150px;
+      margin:auto;
+      display: block;
+  }
+
+  .icons {
+    width: 50%;
+    margin: 0 auto;
+  }

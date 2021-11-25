@@ -6,5 +6,6 @@
     <PackageReference Include="Blazored.SessionStorage" Version="2.2.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0"/>
+    <PackageReference Include="Markdig" Version="0.26.0"/>
   </ItemGroup>
 </Project>

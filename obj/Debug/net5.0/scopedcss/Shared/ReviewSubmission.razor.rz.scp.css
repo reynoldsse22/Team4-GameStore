@@ -1,0 +1,36 @@
+.btn:hover[b-hajw8yr892] {
+    background-color: orange;
+  }
+
+  .btn[b-hajw8yr892]:after {
+    background-color: orange;
+  }
+
+  .review-heading[b-hajw8yr892]{
+      background-color: indigo;
+      color: white;
+      font-size: 25px;
+      position: center;
+      text-align: center;  
+  }
+
+  .row[b-hajw8yr892] {
+    display: flex;
+    align-content: center;
+  }
+  
+  .column[b-hajw8yr892] {
+    flex: 33%;
+  }
+
+  #Description[b-hajw8yr892]{
+      width: 80%;
+      height: 150px;
+      margin:auto;
+      display: block;
+  }
+
+  .icons[b-hajw8yr892] {
+    width: 50%;
+    margin: 0 auto;
+  }

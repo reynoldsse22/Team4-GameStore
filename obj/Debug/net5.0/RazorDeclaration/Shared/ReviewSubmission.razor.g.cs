@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Pages.Games
+namespace BlazorApp.Shared
 {
     #line hidden
     using System;
@@ -75,15 +75,7 @@ using BlazorApp;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Games\3.razor"
-using BlazorApp.Shared;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Games/3")]
-    public partial class _3 : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ReviewSubmission : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,82 +83,69 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 7 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Pages\Games\3.razor"
- 
-    List<Game> Games = new List<Game>();
-    
+#line 5 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\ReviewSubmission.razor"
+       
+
+    [Parameter]
+    public Review NewReview { get; set; } = new Review();
+
+    [Parameter]
+    public int GameID {get;set;}
     List<Review> Reviews = new List<Review>();
-    Game game = new Game();
 
-    Review newReview = new Review();
+    public int ID {get;set;}
 
-    public int Stars{get;set;} = 0;
-    public int Rating = 0;
-    public float Average{get;set;} = 0;
-    public float NumberOfReviews{get;set;} = 0;
-    public float num1Stars{get;set;} = 0;
-    public float num2Stars{get;set;} = 0;
-    public float num3Stars{get;set;} = 0;
-    public float num4Stars{get;set;} = 0;
-    public float num5Stars{get;set;} = 0;
-    public float width1{get;set;}
-    public float width2{get;set;}
-    public float width3{get;set;}
-    public float width4{get;set;}
-    public float width5{get;set;}
-    protected override async Task OnInitializedAsync()
+ 
+    private async Task AddNewReview()
     {
-        await RefreshGames();
-        await RefreshReviews();
+        NewReview.ID = Reviews.Count + 1;
+        NewReview.GameID = GameID;
+        NewReview.Date = DateTime.Today;
+        await services.AddReviewAsync(NewReview);
+        NewReview = new Review();
+        UriHelper.NavigateTo(UriHelper.Uri, forceLoad: true);
     }
 
-    private async Task RefreshGames()
+    protected override async Task OnInitializedAsync()
     {
-        Games = await service.GetGames(); 
-        game = Games.Where(x => x.ID == 3).FirstOrDefault();
+        await RefreshReviews();
     }
 
     private async Task RefreshReviews()
     {
-        Reviews = await reviewService.GetReviews(); 
+        Reviews = await services.GetReviews();
     }
-    
-    public void calculateStats() {
-        width1 = ((num1Stars/NumberOfReviews)*100.0f);
-        width2 = ((num2Stars/NumberOfReviews)*100.0f);
-        width3 = ((num3Stars/NumberOfReviews)*100.0f);
-        width4 = ((num4Stars/NumberOfReviews)*100.0f);
-        width5 = ((num5Stars/NumberOfReviews)*100.0f);
-        Average = (((num5Stars*5) + (num4Stars*4) + (num3Stars*3) + (num2Stars*2)+(num1Stars*1) )/ NumberOfReviews);
 
-        if (Average > 1){
-            if (Average > 2){
-                if (Average > 3){
-                    if (Average > 4){
-                        Rating=5;
-                    }
-                    else{
-                        Rating=4;
-                    }
-                }
-                else{
-                    Rating=3;
-                }
-            }
-            else{
-                Rating=2;
-            }
-        }
-        else{
-            Rating=1;
-        }
+    private void setStars1()
+    {
+        NewReview.Stars = 1;
+    }
+
+    private void setStars2()
+    {
+        NewReview.Stars = 2;
+    }
+
+    private void setStars3()
+    {
+        NewReview.Stars = 3;
+    }
+
+    private void setStars4()
+    {
+        NewReview.Stars = 4;
+    }
+
+    private void setStars5()
+    {
+        NewReview.Stars = 5;
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ReviewDbService reviewService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GameDbService service { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ReviewDbService services { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -98,6 +98,8 @@ using BlazorApp.Shared;
     List<Review> Reviews = new List<Review>();
     Game game = new Game();
 
+    Review newReview = new Review();
+
     public int Stars{get;set;} = 0;
     public int Rating = 0;
     public float Average{get;set;} = 0;

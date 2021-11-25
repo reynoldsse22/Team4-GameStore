@@ -75,6 +75,13 @@ using BlazorApp;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
+using BlazorApp.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : LayoutComponentBase
     {
@@ -84,10 +91,16 @@ using BlazorApp;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 40 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
+#line 46 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
        
+
+    
     private User users;
     private string list;
+
+    private string email;
+
+    private string password;
     protected override Task OnInitializedAsync()
     {
         users = new User();
@@ -101,13 +114,13 @@ using BlazorApp;
 
         foreach(User u in people)
         {
-            if(users.Email == u.Email)
+            if(email == u.Email)
             {
                 if(users.Password == u.Password)
                 {
                     ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.FirstName);
                     NavigationManager.NavigateTo("/games");
-                    await sessionStorage.SetItemAsync("email", users.Email);
+                    await sessionStorage.SetItemAsync("email", email);
                     count++;
                 }
             }
