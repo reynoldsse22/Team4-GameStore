@@ -91,7 +91,7 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
+#line 43 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\Login.razor"
        
 
     
@@ -108,24 +108,15 @@ using BlazorApp.Shared;
     }
     private async Task<bool> ValidateUser()
     {
-        int count = 0;
-        List<User> people;
-        people = await UserDbService.GetUsers();
-
-        foreach(User u in people)
+        User UserAttempt;
+        UserAttempt = await UserDbService.GetUser(users.Email, users.Password);
+        if(UserAttempt != null)
         {
-            if(email == u.Email)
-            {
-                if(users.Password == u.Password)
-                {
-                    ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(u.FirstName);
-                    NavigationManager.NavigateTo("/games");
-                    await sessionStorage.SetItemAsync("email", email);
-                    count++;
-                }
-            }
+            ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(UserAttempt.FirstName);
+            NavigationManager.NavigateTo("/games");
+            await sessionStorage.SetItemAsync("email", UserAttempt.Email);
         }
-        if(count == 0)
+        else
         {
             list = "Wrong Username or Password";
         }

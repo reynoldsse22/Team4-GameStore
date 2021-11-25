@@ -19,9 +19,9 @@ public class UserDbService
     /// This method returns the list of product
     /// </summary>
     /// <returns></returns>
-    public async Task<List<User>> GetUsers()
+    public async Task<User> GetUser(string email, string password)
     {
-        return await dbContext.User.ToListAsync();
+         return await dbContext.User.FromSqlRaw($"Select * FROM User Where Email='{email}' AND Password='{password}'").FirstOrDefaultAsync();
     }
     /// <summary>
     /// This method add a new product to the DbContext and saves it
