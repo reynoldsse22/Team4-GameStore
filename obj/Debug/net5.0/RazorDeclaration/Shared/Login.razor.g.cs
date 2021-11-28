@@ -114,7 +114,7 @@ using BlazorApp.Shared;
         {
             ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(UserAttempt.FirstName);
             NavigationManager.NavigateTo("/games");
-            await sessionStorage.SetItemAsync("email", UserAttempt.Email);
+            await sessionStorage.SetItemAsync("email", UserAttempt.FirstName);
         }
         else
         {

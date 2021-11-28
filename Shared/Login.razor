@@ -28,7 +28,7 @@
                 <br />
             </div>
             <div class="col-10">
-                <input class="form-control inputs" @bind="@users.Password" placeholder="Password" />
+                <input type="password" class="form-control inputs" @bind="@users.Password" placeholder="Password" />
             </div>
             <br />
             <div class="col-5">
@@ -62,7 +62,7 @@
         {
             ((CustomAuthProvider)AuthenticationStateProvider).MakeUserAuth(UserAttempt.FirstName);
             NavigationManager.NavigateTo("/games");
-            await sessionStorage.SetItemAsync("email", UserAttempt.Email);
+            await sessionStorage.SetItemAsync("email", UserAttempt.FirstName);
         }
         else
         {
