@@ -544,3 +544,9 @@ C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Shared\Re
 C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Shared\ReviewSubmission.razor.g.cs
 C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\scopedcss\Shared\ReviewDetail.razor.rz.scp.css
 C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\scopedcss\Shared\ReviewSubmission.razor.rz.scp.css
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Pages\Games\5.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Pages\Games\5.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Pages\Games\6.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Pages\Games\7.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Pages\Games\6.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Pages\Games\7.razor.g.cs

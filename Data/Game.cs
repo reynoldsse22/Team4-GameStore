@@ -24,5 +24,6 @@ public enum Console{
     Wii,
     Wii_U,
     DS,
-    GameBoy
+    GameBoy,
+    Playstation_2
 }

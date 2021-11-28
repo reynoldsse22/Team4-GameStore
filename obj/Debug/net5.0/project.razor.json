@@ -12,6 +12,72 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -879960111,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.About",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.About"
+        }
+      },
+      {
+        "HashCode": -859155983,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.About",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1111749388,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Cart",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cart"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Cart"
+        }
+      },
+      {
+        "HashCode": 1100543141,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Cart",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Cart"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Cart",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -161834752,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Checkout",
@@ -41,6 +107,105 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Pages.Checkout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1819931070,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList"
+        }
+      },
+      {
+        "HashCode": -1542993760,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1959485522,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Index",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 53475371,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Index",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1747013910,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.WishList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WishList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.WishList"
+        }
+      },
+      {
+        "HashCode": 1712237801,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.WishList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.WishList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.WishList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -177,167 +342,101 @@
         }
       },
       {
-        "HashCode": -1959485522,
+        "HashCode": 421895745,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Index",
+        "Name": "BlazorApp.Pages.Games._6",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "_6"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Index"
+          "Common.TypeName": "BlazorApp.Pages.Games._6"
         }
       },
       {
-        "HashCode": 53475371,
+        "HashCode": -381508365,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Index",
+        "Name": "BlazorApp.Pages.Games._6",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Index"
+            "TagName": "BlazorApp.Pages.Games._6"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Index",
+          "Common.TypeName": "BlazorApp.Pages.Games._6",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1747013910,
+        "HashCode": 1669891657,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
+        "Name": "BlazorApp.Pages.Games._5",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WishList"
+            "TagName": "_5"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList"
+          "Common.TypeName": "BlazorApp.Pages.Games._5"
         }
       },
       {
-        "HashCode": 1712237801,
+        "HashCode": -1345677484,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
+        "Name": "BlazorApp.Pages.Games._5",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.WishList"
+            "TagName": "BlazorApp.Pages.Games._5"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList",
+          "Common.TypeName": "BlazorApp.Pages.Games._5",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1819931070,
+        "HashCode": -1201432683,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
+        "Name": "BlazorApp.Pages.Games._7",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GameList"
+            "TagName": "_7"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList"
+          "Common.TypeName": "BlazorApp.Pages.Games._7"
         }
       },
       {
-        "HashCode": -1542993760,
+        "HashCode": -2013305151,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
+        "Name": "BlazorApp.Pages.Games._7",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.GameList"
+            "TagName": "BlazorApp.Pages.Games._7"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1111749388,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Cart",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Cart"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Cart"
-        }
-      },
-      {
-        "HashCode": 1100543141,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Cart",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Cart"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Cart",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -879960111,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About"
-        }
-      },
-      {
-        "HashCode": -859155983,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About",
+          "Common.TypeName": "BlazorApp.Pages.Games._7",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -371,6 +470,107 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 325972236,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.GameDetail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameDetail"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InCart",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "InCart"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InWishList",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "InWishList"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Quantity",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Quantity"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.GameDetail"
+        }
+      },
+      {
+        "HashCode": 2021977117,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.GameDetail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Shared.GameDetail"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InCart",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "InCart"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InWishList",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "InWishList"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Quantity",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Quantity"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.GameDetail",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -467,6 +667,135 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorApp.Shared.Login.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -186000392,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.MainLayout",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 2029050121,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.MainLayout",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 318930202,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorApp.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorApp",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorApp.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -690777284,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorApp.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorApp",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "BlazorApp.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorApp.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1613854634,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.NavMenu",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -1179575551,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Shared.NavMenu",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -605,236 +934,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Shared.ReviewSubmission",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -186000392,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.MainLayout",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": 2029050121,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.MainLayout",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 318930202,
-        "Kind": "Components.ChildContent",
-        "Name": "BlazorApp.Shared.MainLayout.Body",
-        "AssemblyName": "BlazorApp",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "BlazorApp.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -690777284,
-        "Kind": "Components.ChildContent",
-        "Name": "BlazorApp.Shared.MainLayout.Body",
-        "AssemblyName": "BlazorApp",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "BlazorApp.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "BlazorApp.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1613854634,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.NavMenu",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -1179575551,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.NavMenu",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 325972236,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.GameDetail",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameDetail"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InCart",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "InCart"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InWishList",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "InWishList"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Quantity",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Quantity"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.GameDetail"
-        }
-      },
-      {
-        "HashCode": 2021977117,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Shared.GameDetail",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Shared.GameDetail"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InCart",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "InCart"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InWishList",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "InWishList"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Quantity",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Quantity"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Shared.GameDetail",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16464,6 +16563,11 @@
   "RootNamespace": "BlazorApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Games\\6.razor",
+      "TargetPath": "Pages\\Games\\6.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
@@ -16491,6 +16595,11 @@
     {
       "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Games\\7.razor",
+      "TargetPath": "Pages\\Games\\7.razor",
       "FileKind": "component"
     },
     {
@@ -16547,6 +16656,11 @@
       "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Games\\5.razor",
+      "TargetPath": "Pages\\Games\\5.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\Pages\\Games\\2.razor",
