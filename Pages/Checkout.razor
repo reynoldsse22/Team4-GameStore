@@ -1,3 +1,41 @@
 @page "/Checkout"
+@inject CartDbService service
+@inject NavigationManager UriHelper
+@using BlazorApp.Shared
 
-<h1 style="text-align:center;">Checkout</h1>
+<div style="display: flex;
+  align-items: center;
+  justify-content: center;">
+<br>
+<br>
+<h2>Thank you for your purchase!</h2>
+</div>
+<br>
+<div style="display: flex;
+  align-items: center;
+  justify-content: center;">
+<button name="backbutton" @onclick="BackToHome">Finish</button>
+</div>
+@code
+{
+    List<Game> Games = new List<Game>();
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshCart();
+    }
+
+    private async Task RefreshCart()
+    {
+        Games = await service.GetCart();
+        foreach(Game game in Games)
+        {
+            await service.DeleteGameAsync(game, game.Quantity);
+        }  
+    }  
+
+    private void BackToHome()
+    {
+        UriHelper.NavigateTo("/", forceLoad:true);
+    }
+}
+

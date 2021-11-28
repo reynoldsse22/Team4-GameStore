@@ -16,6 +16,7 @@
     public int Rating = 0;
     public float Average{get;set;} = 0;
     public float NumberOfReviews{get;set;} = 0;
+    public int NumOfReviewsForGame{get;set;} = 0;
     public float num1Stars{get;set;} = 0;
     public float num2Stars{get;set;} = 0;
     public float num3Stars{get;set;} = 0;
@@ -44,6 +45,9 @@
     }
     
     public void calculateStats() {
+      if(NumOfReviewsForGame > 0)
+      {
+
         width1 = ((num1Stars/NumberOfReviews)*100.0f);
         width2 = ((num2Stars/NumberOfReviews)*100.0f);
         width3 = ((num3Stars/NumberOfReviews)*100.0f);
@@ -72,13 +76,23 @@
         else{
             Rating=1;
         }
-    }
+     }
+     else {
+       Average = 0.0f;
+       width1 = 0;
+       width2 = 0;
+       width3 = 0;
+       width4 = 0;
+       width5 = 0;
+     }
+   }
 }
 
 @foreach (var review in Reviews)
 {
   if(review.GameID == 2)
     {
+      NumOfReviewsForGame++;
       if(review.Stars == 2){
         num1Stars++;
       }else if(review.Stars == 2){
@@ -181,7 +195,12 @@
 </div>
 
 <br>
-<h3 style="text-align:left">Reviews</h3>
+@if(@NumOfReviewsForGame < 1){
+  <h3 style="text-align:left">No Reviews Yet</h3>
+}
+else{
+  <h3 style="text-align:left">Reviews</h3>
+}
 <hr style="border:1px solid #f1f1f1">
 @foreach (var review in Reviews)
 {
