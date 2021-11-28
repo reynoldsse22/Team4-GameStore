@@ -537,3 +537,10 @@ C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\bin\Debug\net5.0
 C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Shared\ReviewSubmission.razor.g.cs
 C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\obj\Debug\net5.0\Razor\Shared\ReviewSubmission.razor.g.cs
 C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\obj\Debug\net5.0\scopedcss\Shared\ReviewSubmission.razor.rz.scp.css
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\bin\Debug\net5.0\Markdig.dll
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Shared\ReviewDetail.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\RazorDeclaration\Shared\ReviewSubmission.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Shared\ReviewDetail.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\Razor\Shared\ReviewSubmission.razor.g.cs
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\scopedcss\Shared\ReviewDetail.razor.rz.scp.css
+C:\Users\cocar\Documents\GitHub\Team4-GameStore\obj\Debug\net5.0\scopedcss\Shared\ReviewSubmission.razor.rz.scp.css

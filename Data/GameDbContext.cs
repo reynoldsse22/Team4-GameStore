@@ -66,6 +66,17 @@ public class GameDbContext : DbContext
                     Description = "The game simulates the infantry and combined arms warfare of World War II",
                     Console = Console.Xbox_360,
                     Quantity = 0
+            },
+            new Game
+            {
+                    ID = 5,
+                    Name = "Among Us", 
+                    Price = 10.99f,
+                    OriginalPrice = 20.99f,
+                    ImageLink = "Images/sus.jpg",
+                    Description = "The game simulates the infantry and combined arms warfare of World War II",
+                    Console = Console.Switch,
+                    Quantity = 0
             }
         };   
     }

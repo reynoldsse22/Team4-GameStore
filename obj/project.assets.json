@@ -1396,19 +1396,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samre\\.nuget\\packages\\": {}
+    "C:\\Users\\cocar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\BlazorApp.csproj",
+      "projectUniqueName": "C:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\BlazorApp.csproj",
-      "packagesPath": "C:\\Users\\samre\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\samre\\OneDrive\\Desktop\\Team4-GameStore\\Team4-GameStore\\obj\\",
+      "projectPath": "C:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\BlazorApp.csproj",
+      "packagesPath": "C:\\Users\\cocar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cocar\\Documents\\GitHub\\Team4-GameStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\samre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cocar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1461,6 +1461,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1469,7 +1475,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
