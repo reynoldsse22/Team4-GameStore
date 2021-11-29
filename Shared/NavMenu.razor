@@ -7,6 +7,18 @@
     </button>
 </div>
 
+@if(CartDbService.CartQuantity > 0)
+{
+    CartQuantity = '(' + CartDbService.CartQuantity.ToString() + ')';
+} else {
+    CartQuantity = "";
+}
+@if(WishListDbService.WishListQuantity > 0)
+{
+    WLQuantity = '(' + WishListDbService.WishListQuantity.ToString() + ')';
+} else {
+    WLQuantity = "";
+}
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
@@ -24,19 +36,22 @@
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="wishlist"
                 Match="NavLinkMatch.All">
-                <span class="material-icons">receipt_long</span> Wishlist (@WishListDbService.WishListQuantity)
+                <span class="material-icons">receipt_long</span> Wishlist @WLQuantity
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="cart"
                 Match="NavLinkMatch.All">
-                <span class="material-icons">shopping_cart</span> Cart (@CartDbService.CartQuantity)
+                <span class="material-icons">shopping_cart</span> Cart @CartQuantity
             </NavLink>
         </li>
     </ul>
 </div>
 
 @code {
+
+    private string WLQuantity = "";
+    private string CartQuantity = "";
     private bool collapseNavMenu = true;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -45,4 +60,5 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 }

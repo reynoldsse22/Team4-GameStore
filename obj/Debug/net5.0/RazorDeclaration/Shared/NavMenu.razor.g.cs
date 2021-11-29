@@ -83,8 +83,11 @@ using BlazorApp;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\NavMenu.razor"
+#line 51 "C:\Users\samre\OneDrive\Desktop\Team4-GameStore\Team4-GameStore\Shared\NavMenu.razor"
        
+
+    private string WLQuantity = "";
+    private string CartQuantity = "";
     private bool collapseNavMenu = true;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -93,6 +96,7 @@ using BlazorApp;
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 
 #line default
 #line hidden
