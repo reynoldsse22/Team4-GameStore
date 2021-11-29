@@ -1,7 +1,0 @@
-1. Create Checkout with quantity functionality
-2. Create single product page - with reviews
-3. Create Log in?
-4. Connect to back end SQL Lite database for data permanence
-5. Style pages (Especially Home Page)
-6. Create and add more used video games
-7. Optional - Flesh out wishlist page
