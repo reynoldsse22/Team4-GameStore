@@ -13,6 +13,7 @@
     private float Total = 0;
     private string TaxString;
     private string TotalString;
+    private string CostString;
     private int CartQuantity = 0;
     public string someString;
 
@@ -40,6 +41,7 @@
         Cost += (game.Price * game.Quantity);
         Tax = (Cost * 6.35f) / 100.0f;
         Total = Cost + Tax;
+        CostString = String.Format("{0:0.00}",Cost);
         TaxString = String.Format("{0:0.00}",Tax);
         TotalString = String.Format("{0:0.00}",Total);
         CartQuantity += game.Quantity;
@@ -52,13 +54,17 @@
 {
     <br>
     <hr size="25" noshade>
-    <h4>Subtotal: $@Cost</h4>
+    <h4>Subtotal: $@CostString</h4>
     <h4>Tax:      $@TaxString</h4>
     <hr size="25" noshade>
     <h3>Total:    $@TotalString</h3>
     <br>
     <br>
     <button class="btn btn-info" id="CheckOutButton" name="CheckOutButton" @onclick="Checkout">Proceed To Checkout</button>
+    <br>
+    <br>
+    <br>
+    <br>
 }
 else
 {

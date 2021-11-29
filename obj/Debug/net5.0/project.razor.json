@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": -1819931070,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList"
-        }
-      },
-      {
-        "HashCode": -1542993760,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.GameList",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.GameList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.GameList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1982622831,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Games._1",
@@ -342,35 +309,68 @@
         }
       },
       {
-        "HashCode": 1747013910,
+        "HashCode": -879960111,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
+        "Name": "BlazorApp.Pages.About",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WishList"
+            "TagName": "About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList"
+          "Common.TypeName": "BlazorApp.Pages.About"
         }
       },
       {
-        "HashCode": 1712237801,
+        "HashCode": -859155983,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.WishList",
+        "Name": "BlazorApp.Pages.About",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.WishList"
+            "TagName": "BlazorApp.Pages.About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.WishList",
+          "Common.TypeName": "BlazorApp.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1819931070,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList"
+        }
+      },
+      {
+        "HashCode": -1542993760,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.GameList",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.GameList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.GameList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -408,35 +408,35 @@
         }
       },
       {
-        "HashCode": -879960111,
+        "HashCode": 1747013910,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
+        "Name": "BlazorApp.Pages.WishList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "About"
+            "TagName": "WishList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About"
+          "Common.TypeName": "BlazorApp.Pages.WishList"
         }
       },
       {
-        "HashCode": -859155983,
+        "HashCode": 1712237801,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.About",
+        "Name": "BlazorApp.Pages.WishList",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.About"
+            "TagName": "BlazorApp.Pages.WishList"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.About",
+          "Common.TypeName": "BlazorApp.Pages.WishList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

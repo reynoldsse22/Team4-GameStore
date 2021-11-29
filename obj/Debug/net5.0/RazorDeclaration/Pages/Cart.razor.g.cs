@@ -99,6 +99,7 @@ using BlazorApp.Shared;
     private float Total = 0;
     private string TaxString;
     private string TotalString;
+    private string CostString;
     private int CartQuantity = 0;
     public string someString;
 
